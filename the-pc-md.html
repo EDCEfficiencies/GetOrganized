@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<title>THE-PC-MD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" type="image/png" href="img/trs-square3.png">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+.trs-box:hover {
+  border-style: solid;
+  color: white;
+}
+
+a:hover {color: #000066;}
+.trs-btn {border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;text-align:center;cursor:pointer;white-space:nowrap}
+
+</style>
+<body class="w3-theme-l5">
+<!-- Top menu -->
+<header>
+  <div class="w3-top w3-card-4" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
+    <div class="w3-xlarge" style="max-width:1200px;margin:auto;">
+      <div class="w3-padding w3-left w3-text-white" style="margin-bottom: -10px;height: 68px;">
+        <a href="index.html" class="trs-btn" style="font-size: 28px;margin-top: -18px;color: white;">
+          <img src="img/trs-eye-transparent.png" style="height:23px;width:63px;margin-top: 3px;"><br>
+          <div style="margin-top: -18px;">TRS</div>
+        </a>
+      </div>
+
+      <!-- menu bar on large screens -->
+      <a class="w3-bar-item w3-button w3-text-white w3-hide-large w3-right w3-padding-large w3-large" style="margin-top: 10px;" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      
+      <div class="w3-right w3-padding-16 w3-text-white">
+        <a href="mailto:trsolution@live.com" class="w3-hide-small w3-hide-medium" style="margin-right: 45px;" alt="TheRosenlundSolution" title="Message"><i class="fa fa-envelope"></i></a>
+      </div>
+
+      <div class="w3-right w3-padding-16 w3-text-white">
+        <a href="the-pc-md.html" class="w3-hide-small w3-hide-medium w3-padding-left" style="margin-right: 35px;" alt="TheRosenlundSolution" title="IT"><i class="fa fa-laptop"></i></a>
+      </div>
+
+      <div class="w3-right w3-padding-16 w3-text-white">
+        <a href="new-blog.html" class="w3-hide-small w3-hide-medium w3-padding-left" style="margin-right: 15px;" alt="TheRosenlundSolution" title="Blog"><i class="fa fa-comment"></i></a>
+      </div>
+
+      <div class="w3-right w3-padding-16 w3-margin-right w3-text-white">
+        <a href="index.html" class="w3-hide-small w3-hide-medium" title="Home"><i class="fa fa-home"></i></a>
+      </div>
+
+      <!-- IOG LOGO for large screens -->
+      <div class="w3-center w3-text-white w3-padding w3-hide-medium w3-hide-small">
+        <img src="img/the-pc-md logo/new-pcmd-test 11-23-16.png" class="w3-center" alt="IdahoOutdoorGeeks" width="70" style="margin-top: -3px;margin-left: 135px;" alt="IdahoOutdoorGeeks"><br><span class="w3-large" style="margin-left: 145px;">THE-PC-MD</span>
+      </div>
+      
+      <!-- IOG LOGO for medium screens -->
+      <div class="w3-center w3-text-white w3-padding w3-hide-large w3-hide-small">
+        <img src="img/the-pc-md logo/new-pcmd-test 11-23-16.png" class="w3-center" alt="IdahoOutdoorGeeks" width="70" style="margin-top: -3px;" alt="IdahoOutdoorGeeks"><br><span class="w3-large" style="margin-left: -15px;">THE-PC-MD</span>
+      </div>
+
+      <!-- IOG LOGO for small screens -->
+      <div class="w3-center w3-text-white w3-padding w3-hide-large w3-hide-medium" style="margin-bottom: 0px;">
+        <img src="img/the-pc-md logo/new-pcmd-test 11-23-16.png" class="w3-center" alt="IdahoOutdoorGeeks" width="70" style="margin-left: -20px;" alt="IdahoOutdoorGeeks"><br><span class="w3-large" style="margin-left: -35px;">THE-PC-MD</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-card w3-bar-block w3-hide w3-hide-large w3-large w3-white" style="margin-top: -16px;width: 100%;z-index: 1;position: absolute;">
+  <a href="index.html" class="w3-text-dark-blue w3-center w3-hover-light-blue w3-hover-text-white w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="new-blog.html" class="w3-text-dark-blue w3-center w3-hover-light-blue w3-hover-text-white w3-bar-item w3-button w3-padding-large">Blog</a>
+  <a href="the-pc-md.html" class="w3-text-dark-blue w3-center w3-hover-light-blue w3-hover-text-white w3-bar-item w3-button w3-padding-large">IT</a>
+  <a href="mailto:trsolution@live.com" class="w3-text-dark-blue w3-center w3-hover-light-blue w3-hover-text-white w3-bar-item w3-button w3-padding-large">Contact</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:105px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Some text..</p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Some other text..</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-theme-l1 w3-left-align w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="snow.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">News</span>
+            <span class="w3-tag w3-small w3-theme-d4 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">W3Schools</span>
+            <span class="w3-tag w3-small w3-theme-d3 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Labels</span>
+            <span class="w3-tag w3-small w3-theme-d2 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Games</span>
+            <span class="w3-tag w3-small w3-theme-d1 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Friends</span>
+            <span class="w3-tag w3-small w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Games</span>
+            <span class="w3-tag w3-small w3-theme-l1 w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Friends</span>
+            <span class="w3-tag w3-small w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Food</span>
+            <span class="w3-tag w3-small w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Design</span>
+            <span class="w3-tag w3-small w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Art</span>
+            <span class="w3-tag w3-small w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);cursor: pointer;">Photos</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Social Media template by w3.css</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-btn w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-btn w3-block w3-theme w3-hover-text-light-blue
+ w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section w3-hover-text-light-blue" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section w3-hover-text-light-blue" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- </div> -->
+<div class='w3-row w3-center w3-padding-16' style="z-index: 3">
+    <button onclick="topFunction()" id="myBtn" type="button" class="w3-margin-left w3-padding w3-large w3-text-white w3-hover-white w3-hover-text-white w3-circle w3-btn w3-large" style="box-shadow: 0px 5px 15px gray;background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-arrow-up w3-hover-text-white w3-center" style="width: 35px;"></i></button>
+</div>
+
+<!-- Footer -->
+<!--footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer-->
+<footer id="foot" class="w3-center w3-padding-48 w3-text-white" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
+  <div w3-include-html="footer.html"></div>
+  <p class="w3-text-white">More content coming soon.  Updated  - <span id="CurrentUpdate"></span> <span id="CurrentYear"></span></p>
+  <p class="w3-text-white">&copy; The Rosenlund Solution 2005 - <span id="FooterDate"></span></p>
+</footer>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = -10;
+    document.documentElement.scrollTop = -10;
+}
+</script>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+// for date under family profile intro on main page
+var trsProfileDate = new Date();
+          
+document.getElementById("ProfileDate").innerHTML = trsProfileDate.getFullYear();
+      
+</script>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("CurrentUpdate").innerHTML = months[d.getMonth()];
+
+</script>
+
+<script>
+
+var currentYear = new Date();
+          
+document.getElementById("CurrentYear").innerHTML = currentYear.getFullYear();
+          
+</script>
+
+<script>
+// for date on all pages
+var trsFooterDate = new Date();
+
+document.getElementById("FooterDate").innerHTML = trsFooterDate.getFullYear();
+
+</script>
+
+
+
+<script>
+// Used for w3js include techniques
+w3.includeHTML();
+</script>
+
+</body>
+</html> 
