@@ -19,15 +19,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 .trs-text-blue {color: #000026 !important;}
 .trs-text-green {color:  #004400 !important;}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+/*  background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("58381085_2406534429357636_4803605506767716352_n.jpg");
+  min-height: 400px;
+  width: 800px;
+/*  height: 1250px;*/
+}
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
+  min-height: 400px;
+}
 </style>
 </head>
 <body style="background-color: #000026;/*color: darkslategray;background-image: linear-gradient(to right, #000066 5% , #004400 70%);*/">
 
 <!-- Top menu -->
 <div class="w3-top" style="height: 65px;">
-  <div class="w3-white w3-text-white w3-xlarge" style="max-width:1200px;margin:auto;color: #000066 !important;background-color: #000026!important;height: 65px;">
-    <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="/*color: #000066;height: 65px;*/margin-left: 5px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
-    <p class="w3-right w3-text-white w3-padding-16 w3-hide-small w3-hide-medium w3-hover-text-light-blue" style="margin-right: 5px;margin-top:  5px;cursor: pointer;">eMail</p>
+  <div class="w3-white w3-text-white w3-xlarge" style="max-width:100%;margin:auto;color: #000066 !important;background-color: #000026!important;height: 65px;">
+    <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="/*color: #000066;height: 65px;*/margin-left: 20px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
+    <p class="w3-right w3-text-white w3-padding-16 w3-hide-small w3-hide-medium w3-hover-text-light-blue" style="margin-right: 20px;margin-top:  5px;cursor: pointer;">eMail</p>
     <button class="w3-right w3-padding-16 w3-hide-small w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 18px;height: 65px;">eMail</button>
     <button class="w3-right w3-padding-16 w3-hide-medium w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 15px;height: 65px;">eMail</button>
     <div class="w3-center w3-padding-16">
@@ -59,11 +78,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 <p class="w3-hide-large w3-hide-medium w3-text-white" style="font-size: 11px;margin-top: 60px;margin-bottom: -100px;text-align: center;/*color: #000066 !important;*/"><span style="font-size: 20px;">The Rosenlund Solution</span><br>Technical Understanding for Preparedness Solutions</p>
 <h6 class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;">Technical Understanding for Preparedness Solutions</h6>
-<h6 class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;margin-left: -15px;/*color: #000066 !important;*/">Technical Understanding for Preparedness Solutions</h6>
+<h6 class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;margin-left: -15px;/*color: #000066 !important;*/">Getting Organized and Understanding Technology for better Preparedness Solutions</h6>
+
+
+
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+<div class="w3-main w3-content " style="max-width:100%;margin-top:100px">
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
@@ -142,22 +164,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
   </div-->
   
-  <hr id="about">
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32 w3-center w3-text-white">  
-    <h3>Meet the Rosenlunds</h3><br>
-    <img src="58381085_2406534429357636_4803605506767716352_n.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-    <div class="w3-padding-32">
+  <!-- <hr id="about"> -->
 
 
-      <h4><b>Together exploring life and the great outdoors!</b></h4>
-      <h6><i>We absolutely love nature and the many beautiful wonders of God's creations!</i></h6>
-      <h3 class="w3-center"><span id="ProfileDate"></span></h3>
-      
-    </div>
-  </div>
-  <hr>
+<!-- Page content -->
+<div class="w3-content w3-center w3-text-white w3-margin-top" id="portfolio" style="padding-left: 200px;padding-right: 200px;">
+  <h3>Meet the Rosenlunds</h3><br>
+  <!-- Images (Portfolio) -->
+  <img src="58381085_2406534429357636_4803605506767716352_n.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+  
+  <h4><b>Together exploring life and the great outdoors!</b></h4>
+  <h6><i>We absolutely love nature and the many beautiful wonders of God's creations!</i></h6>
+  <h3 class="w3-center"><span id="ProfileDate"></span></h3>  
+
+<!-- End page content -->
+</div>
+
+
+  
   
 
   <div class="w3-row-padding w3-center w3-text-white">
@@ -252,24 +276,41 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   </h6>
 </div>
 
-  <!-- Footer -->
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
   <footer class="w3-row-padding w3-padding-32 w3-text-white">
     <div class="w3-third">
       <h3>Just so you know</h3>
       <footer id="foot" class="w3-center w3-padding-48 w3-text-white" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
-        <!-- <div w3-include-html="footer.html"></div> -->
-        <div class="w3-hide-medium w3-hide-small"><!-- More content coming soon. (for editing, see comingSoon.html) -->
-          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate"></span> <span id="TRSFullYear"></span></p>
-          <!-- TRS copyright. (for editing, see trsAtCopy.html) -->
-          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate"></span></p>
+        <!-- For this section there are two includes.  More content coming soon and TRS copyright. (for editing, see comingSoon.html, trsAtCopy.html) -->
+        <div class="w3-hide-medium w3-hide-small">
+          <p class="w3-text-white">
+            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate"></span> <span id="TRSFullYear"></span>
+          </p>
+          
+          <p class="w3-text-white">
+            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate"></span>
+          </p>
         </div>
         <div class="w3-hide-large w3-hide-small w3-small">
-          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate2"></span> <span id="TRSFullYear2"></span></p>
-          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate2"></span></p>
+          <p class="w3-text-white">
+            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate2"></span> <span id="TRSFullYear2"></span>
+          </p>
+          <p class="w3-text-white">
+            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate2"></span>
+          </p>
         </div>
         <div class="w3-hide-large w3-hide-medium w3-xsmall">
-          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate3"></span> <span id="TRSFullYear3"></span></p>
-          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span></p>
+          <p class="w3-text-white">
+            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate3"></span> <span id="TRSFullYear3"></span>
+          </p>
+          <p class="w3-text-white">
+            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span>
+          </p>
         </div>
       </footer>
       <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
@@ -310,8 +351,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     </div>
   </footer>
 
-<!-- End page content -->
-</div>
+<!-- Third Parallax Image with Portfolio Text -->
+<!--div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div-->
 
 <script>
 // for date under family profile intro on main page
