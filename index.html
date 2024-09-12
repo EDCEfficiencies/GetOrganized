@@ -1,598 +1,563 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>The Rosenlund Solution</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/png" href="img/trs-square3.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-
-
-<script type="text/javascript" src='modal.js'></script>
-<script src="w3.js"></script>
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
-.w3-bar-block .w3-bar-item {padding:20px}
-.trs-text-blue {color: #000026 !important;}
-.trs-color {background-color: #000026!important;}
-.trs-text-green {color:  #004400 !important;}
-.trs-green {background-color: #004400 !important;}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-/*  background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("58381085_2406534429357636_4803605506767716352_n.jpg");
-  min-height: 400px;
-  width: 800px;
-/*  height: 1250px;*/
-}
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-</style>
-</head>
-<body style="background-color: #000026;">
-
-<!-- Top menu -->
-<div class="w3-top" style="height: 65px;">
-  <div class="w3-white w3-text-white w3-xlarge" style="max-width:100%;margin:auto;color: #000066 !important;background-color: #000026 !important;height: 65px;">
-    <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="margin-left: 20px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
+  <head>
+    <title>The Rosenlund Solution</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <div class="w3-center w3-padding-16">
-      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-medium" style="height:50px;width:50px;margin-top: -30px;margin-right: 70px;text-decoration: none;" alt="TheRosenlundSolution">
-        <img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-large" style="height:50px;width:50px;margin-top: -30px;margin-left: 30px;text-decoration: none;" alt="TheRosenlundSolution"><br>
-      
-      <p class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: -20px;margin-right: 60px;">The Rosenlund Solution</p><br>
-      
-      <p class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: -53px;margin-left: 65px;">The Rosenlund Solution</p></a><br>
+    <link rel="shortcut icon" type="image/png" href="trs-app-logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 
-      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-medium w3-hide-large" style="height:50px;width:50px;margin-top: -220px;margin-left: -5px;" alt="TheRosenlundSolution"></a><br>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    .trs-blueBackground {background-color: #000026!important;}
+    .trs-blueTxt {color: #000026!important;}
+    .trs-greenBackground {background-color: #666633 !important;}
+    .trs-darkGreenTxt {color: #004400 !important;}
+    .trs-odGreenTxt {color: #666633 !important;}
+    .trs-margin-top{margin-top: 8px;}
+    .trs-lightBlue {color: #66ccff !important}
+    .trs-hoverLightBlue:hover {color: #66ccff !important}
+    .trs-hoverDarkBlue:hover {color: #000026 !important}
+    .trs-lightBlueBackround {background-color: #66ccff !important}
+    .trs-hoverLightBlueBackround:hover {background-color: #66ccff !important}
+    .w3-button {opacity: none !important}
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://www.w3schools.com/w3images/mac.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-text-white w3-card trs-blueBackground" id="myNavbar">
+    <img class="w3-left" style="margin: 12px 12px 12px 12px;" src="trs-app-logo.png" width="40" height="40">
+    <a href="#home" class="w3-bar-item w3-large w3-button w3-wide w3-hide-small"><strong>The Rosenlund Solution</strong></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <!--DO NOT DELETE THE TAG BELOW THIS LINE.  When pricing is figured out, this will be implemented -->
+      <!-- <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a> -->
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+ 
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+  
 </div>
 
-
-<!-- Toggle menu for medium and large screens (hidden by default) -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left trs-green w3-text-white" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Who are we?</a>
-  <a href="new-blog.html" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">IT</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Info</a>
-  <a  href="mailto:therosenlundsolution@gmail.com" onclick="w3_close()" class="w3-bar-item w3-button">eMail Contact</a>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-xxlarge">EDC EFFICIENCIES</span><br>
+    <span class="w3-jumbo w3-hide-small w3-hide-medium">Get Organized, Be Ready</span><br>
+    <span class="w3-xxlarge w3-hide-large">Get Organized, Be Ready</span><br>
+    <span class="w3-large">Get Organized and Prepared for every day life with Simple Preparedness Solutions.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
 
-<p class="w3-hide-large w3-hide-medium w3-text-white" style="font-size: 11px;margin-top: 60px;margin-bottom: -100px;text-align: center;/*color: #000066 !important;*/"><span style="font-size: 20px;">The Rosenlund Solution</span><br>Technical Understanding for Preparedness Solutions</p>
-<h6 class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;">Technical Understanding for Preparedness Solutions</h6>
-<h6 class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;margin-left: -15px;/*color: #000066 !important;*/">Getting Organized and helping you Understand your Technology for Simpler Preparedness Solutions</h6>
-
-
-
-
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content " style="max-width:100%;margin-top:175px">
-
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-large">And what we do</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
-      <img class="w3-round" src="laptop-cleaning2.jpg" alt="Popsicle" style="width: 100%;">
-      <h3 class="w3-text-white">Cleaning Solutions</h3>
-      
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
-
-      <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container trs-color w3-text-white">
-            <span onclick="document.getElementById('id01').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
-            <p class="w3-large">Cleaning concepts since the mid to late 90's<br>
-
-              In my youth, my mother taught me the value of having clean clothes and a clean, neat and tidy room.  As the years went on I had discovered that the scouts were teaching me very similar concepts.  After high school I had opportunity to work with my dad and brothers cleaning business that was later handed over to me after the Marines.  The Marines also gave me strong cleanliness disciplines.  Then many years later, what started out as cleaning carpets and upholstery has only grown.   We took on lawn care that expanded into cleaning up and organizing yards and homes outside and in. And now my knowledge and understanding of cleaning practices has now expanded into all aspects of life.   What used to be just a floor cleaning business has now expanded into understanding technology and how to even keep our tech clean and save and secure because tech is very much also a good part of the life that we are all living.  It keeps us communicating and offers us enterainment and even helps us stay organized.  So having a clean home means so much more than just having clean floors, furniture and a clean yard.   We now consider all aspects of our living environment and the things that we use from day to day.<br>
-
-              Cleanliness has become a part of who we are.
-            </p>
-          </div>
-        </div>
-      </div>
+      <i class="fa fa-refresh w3-margin-bottom w3-jumbo w3-center trs-odGreenTxt"></i>
+      <p class="w3-large">Clean</p>
+      <p>Having a clean environment.<br>
+      Brings clarity and peace of mind.<br>
+      Clean surfaces give us confidence<br>
+      in where we place our hands and things,<br> 
+      giving us confidence in our step.<br>
+      Having clean tech, tools and equipment<br>
+      Keeps things free from dust<br>
+      that helps prevent overheating,<br>
+      while keeping the software<br>
+      that is running our devices,<br>
+      clean and up to date and virus free.<br>
+      We can help you get all cleaned up<br>
+      giving you peace of mind.<br>
+      in your preparedness practices.</p>
     </div>
-    
     <div class="w3-quarter">
-      <img class="w3-round" src="foodPrep.jpg" alt="Steak" style="width: 100%;">
-      <h3 class="w3-text-white">Organizational Solutions</h3>
-      
-      <button onclick="document.getElementById('id02').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
-
-      <div id="id02" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container trs-color w3-text-white">
-            <span onclick="document.getElementById('id02').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
-            <p class="w3-large">Organizational practices since the 80's<br>
-
-              Also planted in me by my Mother in my early youth, the value in having a neat, clean and organized bedroom.   Even though I have not always been very good at keeping my room clean, it is what I strive for each day.   I have taken my knowledge of organizing to a new level years ago when I was hired on by a professional organizing company.  Our team cleaned and organized homes, storage spaces and work spaces. As I grew in knowledge and experience, having a team helped me learn how to take these concepts into supervisory and management roles and practices.  Teaching others what I have learned and staying organized in the process brings it all to a whole new level.  Those were some good times learning and growing as a team.   We now believe in having a house of order and cleanliness and strive for this in our own home which gives us the knowledge and understanding of how we can help others in achieving the same.
-            </p>
-          </div>
-        </div>
-      </div>
+      <i class="fa fa-th w3-margin-bottom w3-jumbo trs-odGreenTxt"></i>
+      <p class="w3-large">Organize</p>
+      <p>It pays to be organized.<br>
+      Getting organized leads to less stress.<br>
+      Having less stress leads to a clearer mind.<br>
+      Having a clearer mind helps us think about better order to things.<br>
+      Having good order gives good peace of mind.<br>
+      Having a good peace of mind helps us find joy and achieve happiness.</p>
     </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo trs-odGreenTxt"></i>
+      <p class="w3-large">Prepare</p>
+      <p>If we are prepared, we shall not fear.<br>
+      Preparation is not just a thing to do,<br>
+      it is a way of life.<br>
+      Good Planning and Preparation<br>
+      give us purpose.<br>
+      Planning helps keep things<br>
+      fresh in our minds.<br>
+      Planning helps us adapt to changes.<br>
+      Being prepared gives us confidence<br> 
+      Confidence reassures us<br>
+      that we are ready to battle life.
+      <!-- We have been practicing Preparedness concepts for over 40 years.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-shield w3-margin-bottom w3-jumbo trs-odGreenTxt"></i>
+      <p class="w3-large">Secure</p>
+      <p>Security is number one.<br>
+      We are living in uncertain times.<br>
+      We are also living in a beautiful world.<br>
+      Having good security helps us feel safe.<br>
+      Having good Situational awareness.<br>
+      Keeps us on our guard.<br>
+      Keeping us ready<br>
+      and practicing safe concepts<br>
+      in all that we do.<br>
+      Having good Community<br>
+      solidifies security.<br>
+      Lets look out for each other!</p>
+    </div>
+  </div>
+  <h3 class="w3-center">Utilizing Tech to do so</h3>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container trs-greenBackground" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 class="trs-blueTxt">Simple Tech for Simple Prep</h3>
+      <p class="w3-text-white">We can help you understand your technology for simpler preparedness solutions.<br>Comms, gps, phones, tablets, computers.<br>
+We use all of these devices in the great outdoors at times, espeically comms, gps and cameras.
+We can help you better understand these devices and how to use them.</p>
+      <p><a href="#work" class="w3-button trs-lightBlueBackround"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<!--div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">OUR TEAM</h3>
   
-    <div class="w3-quarter">
-      <img class="w3-round" src="security-solutions.jpg" alt="Cherries" style="width: 100%;">
-      <h3 class="w3-text-white">Preparedness Solutions</h3>
-      
-      <button onclick="document.getElementById('id03').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
-
-      <div id="id03" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container trs-color w3-text-white">
-            <span onclick="document.getElementById('id03').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
-            <p class="w3-large">We have been practicing preparedness practices since we were<br> &quot;knee high to a grass hopper&quot;<br>
-
-              Preparation for me started in the Scouts when I was in my youth.   Years later I joined the Marines where I took preparation to a whole new level.   Since then I have served as a youth leader for my church and have taken my knowledge from my entire life into family life.   We love the outdoors where we get to experience hiking, camping and overlanding.   We have felt that traveling and moving around has been helping us become better prepared.   We are not fully and completely prepared, but we are much closer now than we were 10 or more years ago. And the way we view preparedness is that we are in a constant state of prep and readiness because of how life randomly changes. 
-            </p>
-          </div>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="BeardedRyGuyForToptal.png" alt="John" style="width:80%;margin: 10%;">
+        <div class="w3-container">
+          <h3>Ryan</h3>
+          <p class="w3-opacity">Technician & Organizer</p>
+          <p>From Floor cleaning and skilled trades to an evolved computer tech and pro organizer, I have done a few things over the years!</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
-    <div class="w3-quarter">
-      <img class="w3-round" src="firstAid2.jfif" alt="Pasta and Wine" style="width: 100%;">
-      <h3 class="w3-text-white">Security Solutions</h3>
-      
-      <button onclick="document.getElementById('id04').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
-
-      <div id="id04" class="w3-modal">
-        <div class="w3-modal-content">
-          <div class="w3-container trs-color w3-text-white">
-            <span onclick="document.getElementById('id04').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
-            <p class="w3-large">Security practices since the late 90's<br>
-
-              What started out as simply watching over scouts during scout camp in my youth, turned into securing buildings while working for a security company in the late 90's and on to the Marines as a grunt securing a multitude of other things as I have learned security practices and improvements over the years.   I have been around the world securing vehicles, parking lots, boat ramps, people, ammunition...the list goes on.   And then even for my church I served as Temple security for the Kansas City Missouri Temple for the Church of Jesus Christ of Latter Day Saints when it first opened for it's open house.   I also served as building lockup and security for a Ward in Rexburg Idaho for a time.   And now I am learning to secure computers and help with internet security, also known as cyber security and information security.   Security is very much an important part of every day life....especially in our increasingly growing sketchy world that we are now living in today.<br>
-
-              So as Master Yoda would say....<br>
-              "May the force be with you!" 
-            </p>
-          </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="MyPretty.png" alt="Alli" style="width:90%">
+        <div class="w3-container">
+          <h3>Alli</h3>
+          <p class="w3-opacity">Admin & Logistics</p>
+          <p>From the garden to the home office and out into nature. I am into Homesteading, History and Nature.  I love Owls, Eagles, Moose, Elk and all kinds of wildlife!</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Brysenator.png" alt="Brysen" style="width:90%">
+        <div class="w3-container">
+          <h3>Brysen</h3>
+          <p class="w3-opacity">Builder & Team Lead</p>
+          <p>I am into Legos, tech and survival techniques and practices in the outdoors, specifically in the woods.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="MissEle.png" alt="Dan" style="width:90%">
+        <div class="w3-container">
+          <h3>Elerae</h3>
+          <p class="w3-opacity">Social Relations</p>
+          <p>I love being with my family and friends and love learning about others.  I also love my Barbies and collecting stuffed animals, especially care bears!</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
   </div>
-  
-  <!-- Meet the Rosenlunds -->
-  <!--div class="w3-content w3-center w3-text-white" id="portfolio" style="margin-top: 20px;padding-left: 200px;padding-right: 200px;">
-    <h3>Meet the Rosenlunds</h3><br>
-    
-    <img class="mySlides w3-animate-opacity w3-circle" src="58381085_2406534429357636_4803605506767716352_n.jpg" width="400" height="500">
-    
-    <h4><b>Together exploring life and the great outdoors!</b></h4>
-    <h6><i>We absolutely love nature and the many beautiful wonders of God's creations!</i></h6>
-    <h3 class="w3-center"><span id="ProfileDate"></span></h3>  
-
-  </div-->
-
-  <div class="w3-row-padding w3-center w3-text-white">
-    <!--div class="w3-col l6 m6 w3-margin-bottom">
-      <img class="w3-hide-small w3-circle" src="beautiful2.jpg" alt="Jane" width="200" height="200">
-      <img class="w3-hide-large w3-hide-medium" src="img/beautiful2.jpg" alt="Jane" style="width:50%">
-      <h3>Allison</h3>
-      <p class="w3-opacity">Mom</p>
-      
-      <div id="Alli" class="w3-container trs-color w3-text-white">
-        <p>Hello, I am Allison.  I love Family, I love reading books when I can make time for it, I love art, especally puttng together challenging puzzles, I enjoy history and even a little bit of science, but I am especially into the beauty of Gods creations and in making home a wonderful place to have peace, love and joy.  My hobbies are Bird watching (especiall Owls and Eagles)Arts, Crafts, Board games and spending time with family.  For work, I specialize in office Solutions and in administrative duties.  Being personable with others has always brought me joy and success. 
-        </p>
-      </div>
-    </div-->
-        <!--div class="w3-col l6 m6 w3-margin-bottom">
-            <img class="w3-hide-small w3-circle" src="RyanReckons.jpg" alt="Mike" width="200" height="200">
-            <img class="w3-hide-large w3-hide-medium" src="img/RyanReckons.jpg" alt="Mike" style="width:50%">
-            <h3>Ryan</h3>
-            <p class="w3-opacity">Dad</p>
-            
-            <div id="Ryan" class="w3-container trs-color w3-text-white">
-              <p>Hi, I&apos;m Ryan.  I am an organizer, prepper, technologist and an outdoor geek.  I love the great outdoors and the use of technology that helps me enjoy it.  My work and hobbies consist of technology and becoming organized and prepared.  I love the knowledge that we are part of an Eternal Family and that we can turn to a God that loves us and wants us to succeed in life.  The Gospel of Jesus Christ teaches us to learn of all things both in Heaven and on earth and to become the very best version of ourselves.  And I have loved learning about myself and have found joy in serving and helping others in becoming such. 
-              </p>
-            </div>
-            
-        </div-->
-        <!--div class="w3-col l3 m6 w3-margin-bottom">
-            <img class="w3-hide-small" src="LittleMissElerae-7.png" alt="Dan" style="width:100%">
-            <img class="w3-hide-large w3-hide-medium" src="img/LittleMissElerae-7.png" alt="Dan" style="width:50%">
-            <h3>Miss Elerae</h3>
-            <p class="w3-opacity">Miss Ele</p>
-            
-            <button onclick="readMeE('Elerae')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
-      Read More</button>
-
-            <div id="Elerae" class="w3-hide w3-container w3-light-grey">
-              <p>Hi, I am Miss Elerae! I love music and singing, dancing and want to become a ballerina if I can help it.  I also love art and coloring, playing outdoors in nature and I especially love my Brother Jesus.  He loves me and protects me every day! 
-              </p>
-            </div>
-            
-        </div-->
-    </div>
-
-
-
-
-
-    <div class="w3-row-padding w3-center w3-text-white">
-        <!--div class="w3-col l6 m6 w3-margin-bottom">
-            <img class="w3-hide-small w3-circle" src="MasterBrysenator-9.png" alt="John" width="200" height="200">
-            <img class="w3-hide-large w3-hide-medium" src="img/MasterBrysenator-9.png" alt="John" style="width:50%">
-            <h3>Master Brysen</h3>
-            <p class="w3-opacity">The Lego Master</p>
-
-            <button onclick="readMeB('Brysen')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
-      Read More</button>
-
-            <div id="Brysen" class="w3-container trs-color w3-text-white">
-              <p>I am The Lego Master!  I enjoy spending time with family, building things, climbing in the outdoors and playing all kinds of sports and I absolutely love science and Primary.  My dad and me are good buds and I want to go fishing with him soon. 
-              </p>
-            </div>
-            
-            
-        </div-->
-        <!--div class="w3-col l3 m6 w3-margin-bottom">
-            <img class="w3-hide-small" src="beautiful2.jpg" alt="Jane" style="width:100%">
-            <img class="w3-hide-large w3-hide-medium" src="img/beautiful2.jpg" alt="Jane" style="width:50%">
-            <h3>Allison</h3>
-            <p class="w3-opacity">Mom</p>
-            <button onclick="readMeA('Alli')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
-      Read More</button>
-
-            <div id="Alli" class="w3-hide w3-container w3-light-grey">
-              <p>Hello, I am Allison.  I love Family, I love reading books when I can make time for it, I love art, especally puttng together challenging puzzles, I enjoy history and even a little bit of science, but I am especially into the beauty of Gods creations and in making home a wonderful place to have peace, love and joy.  My hobbies are Bird watching (especiall Owls and Eagles)Arts, Crafts, Board games and spending time with family.  For work, I specialize in office Solutions and in administrative duties.  Being personable with others has always brought me joy and success. 
-              </p>
-            </div>
-            
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-            <img class="w3-hide-small" src="RyanReckons.jpg" alt="Mike" style="width:100%">
-            <img class="w3-hide-large w3-hide-medium" src="img/RyanReckons.jpg" alt="Mike" style="width:50%">
-            <h3>Ryan</h3>
-            <p class="w3-opacity">Dad</p>
-            
-            <button onclick="readMeR('Ryan')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
-      Read More</button>
-
-            <div id="Ryan" class="w3-hide w3-container w3-light-grey">
-              <p>Hi, I&apos;m Ryan.  I am an organizer, prepper, technologist and an outdoor geek.  I love the great outdoors and the use of technology that helps me enjoy it.  My work and hobbies consist of technology and becoming organized and prepared.  I love the knowledge that we are part of an Eternal Family and that we can turn to a God that loves us and wants us to succeed in life.  The Gospel of Jesus Christ teaches us to learn of all things both in Heaven and on earth and to become the very best version of ourselves.  And I have loved learning about myself and have found joy in serving and helping others in becoming such. 
-              </p>
-            </div>
-            
-        </div-->
-        <!--div class="w3-col l6 m6 w3-margin-bottom">
-            <img class="w3-hide-small w3-circle" src="LittleMissElerae-7.png" alt="Dan" width="200" height="200">
-            <img class="w3-hide-large w3-hide-medium" src="img/LittleMissElerae-7.png" alt="Dan" style="width:50%">
-            <h3>Miss Elerae</h3>
-            <p class="w3-opacity">Miss Ele</p>
-            <button onclick="readMeE('Elerae')" class="w3-button w3-light-grey">Read More</button>
-            <button onclick="readMeE('Elerae')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
-      Read More</button>
-
-            <div id="Elerae" class="w3-container trs-color w3-text-white">
-              <p>Hi, I am Miss Elerae! I love music and singing, dancing and want to become a ballerina if I can help it.  I also love art and coloring, playing outdoors in nature and I especially love my Brother Jesus.  He loves me and protects me every day! 
-              </p>
-            </div>
-            
-        </div-->
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-<div class="w3-container w3-padding-32 w3-text-white w3-center w3-xlarge">
-  <p>- Over 40 years of experience in preparedness solutions.</p>
-<p>- Information rich material.</p>
-<p>- Help you better understand your technology.</p>
-<!-- <li class="w3-xlarge">We try and keep you up to date on tech.</li> -->
-<p>- Diversity in organizational and preparedness practices and our primary focus.</p>
-<p>- Learning these concepts thru our experiences in outdoor activities and adventures.</p>
-
-<p>- We believe that prepping for the outdoors will also prepare us in every day living.</p>
-<p>- We have been using technology to help us become more organized and prepared.</p>
-<p>- We have been using our technology to capture the beauties of nature and wildlife moments and for good communication.</p>
-<p>- We are always looking for way to improve our gear that help us utilize our technology in the outdoors.</p>
-<p>- Preparing for enjoying Gods good earth!</p>
-<p>- Helping others along the way in their own journey.</p>
-<p>- Life is challenging.  We are here to help. Let's get organized and prepared together!</p>
-</div>
-
-<!-- List of offerings. (For editing, see offerings.html) --> 
-<!--div class="w3-container w3-padding-32 w3-text-white">
-  <ul class=" w3-hide-medium w3-hide-small w3-xlarge w3-text-white">
-    <div w3-include-html="offerings.html"></div>
-  </ul>
-
-  <ul class=" w3-hide-large w3-hide-small w3-medium w3-text-white">
-    <div w3-include-html="offerings.html"></div>
-  </ul>
-
-  <ul class=" w3-hide-large w3-hide-medium w3-small w3-text-white">
-    <div w3-include-html="offerings.html"></div>
-  </ul> 
-</div>
-
-
-<div class="w3-container w3-padding-32 w3-text-white" style="margin-top: 5px;">
-  <h1 class="w3-center w3-xxlarge trs-text-dkblue w3-hide-medium w3-hide-small">
-    <div w3-include-html="welcome.html"></div>
-  </h1>
-  <h3 class="w3-center w3-large trs-text-dkblue w3-hide-large w3-hide-small">
-    <div w3-include-html="welcome.html"></div>
-  </h3>
-  <h6 class="w3-center w3-medium trs-text-dkblue w3-hide-medium w3-hide-large">
-    <div w3-include-html="welcome.html"></div>
-  </h6>
 </div-->
 
-  
 
-<!-- End page content -->
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Meet our team</h3>
+  <!-- <p class="w3-center w3-large">We aim to do things right the first time!</p> -->
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="Brysenator.png" style="width:65.3%">
+        <div class="w3-container">
+          <h3>Brysen</h3>
+          <p class="w3-opacity">Engineer</p>
+          <p>I have been learning design concepts and creations.</p>
+          <p><button class="w3-button trs-lightBlueBackround w3-block w3-text-white trs-hoverLightBlue"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="MyPretty.png" style="width:70%">
+        <div class="w3-container">
+          <h3>Allison</h3>
+          <p class="w3-opacity">Founder & CEO</p>
+          <p>I specialize in admin and procurement.</p>
+          <p><button class="w3-button trs-lightBlueBackround w3-block w3-text-white trs-hoverLightBlue"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="BeardedRyGuyForToptal.png" style="width:63.5%">
+        <!-- <img src="BeardedRyGuyForToptal.png" width="200" height="250"> -->
+        <div class="w3-container">
+          <h3>Ryan</h3>
+          <p class="w3-opacity">Founder & Tech lead</p>
+          <p>I specialize in tech & prep.  I am even learning cyber security.</p>
+          <p><button class="w3-button trs-lightBlueBackround w3-block w3-text-white trs-hoverLightBlue"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card w3-center">
+        <img src="MissEle.png" style="width:70%">
+        <div class="w3-container">
+          <h3>Miss Elerae</h3>
+          <p class="w3-opacity">Customer Relations</p>
+          <p class="w3-text-grey">I love learning about people and building relationships.</p>
+          <p><button class="w3-button trs-lightBlueBackround w3-block w3-text-white trs-hoverLightBlue"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Footer -->
-  <footer class="w3-row-padding w3-padding-32 w3-text-white">
-    <div class="w3-third">
-      <h3>Just so you know</h3>
-      <footer id="foot" class="w3-center w3-padding-48 w3-text-white" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
-        <!-- For this section there are two includes.  More content coming soon and TRS copyright. (for editing, see comingSoon.html, trsAtCopy.html) -->
-        <div class="w3-hide-medium w3-hide-small">
-          <p class="w3-text-white">
-            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate"></span> <span id="TRSFullYear"></span>
-          </p>
-          
-          <p class="w3-text-white">
-            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate"></span>
-          </p>
-        </div>
-        <div class="w3-hide-large w3-hide-small w3-small">
-          <p class="w3-text-white">
-            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate2"></span> <span id="TRSFullYear2"></span>
-          </p>
-          <p class="w3-text-white">
-            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate2"></span>
-          </p>
-        </div>
-        <div class="w3-hide-large w3-hide-medium w3-xsmall">
-          <p class="w3-text-white">
-            <div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate3"></span> <span id="TRSFullYear3"></span>
-          </p>
-          <p class="w3-text-white">
-            <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span>
-          </p>
-        </div>
-      </footer>
-      <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-text-white w3-row w3-center trs-greenBackground w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">30+</span>
+    <br>Years Experience
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">16+</span>
+    <br>Years of Marriage
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">12+</span>
+    <br>Moves
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">50,000+</span>
+    <br>Miles traveled
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">WHAT WE DO</h3>
+  <p class="w3-center w3-large">We have been pretty diverse</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l4 m6">
+      <img src="2023-11-18 14.18.41.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
     </div>
-  
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul">
+    <div class="w3-col l4 m6">
+      <img src="2023-12-02 14.48.07.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2023-12-09 14.26.48.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <!--div class="w3-col l3 m6">
+      <img src="https://www.w3schools.com/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div-->
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <!--div class="w3-col l3 m6">
+      <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div-->
+    <div class="w3-col l4 m6">
+      <img src="2024-03-12 12.12.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="WebCode.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="gettyimages-1599973349-612x612.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l4 m6">
+      <img src="2024-01-15 11.44.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2024-01-04 15.21.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2023-12-16 15.39.56.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l4 m6">
+      <img src="2024-03-05 13.07.08.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2024-03-12 12.36.01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2024-05-21 13.43.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container trs-greenBackground w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3 class="trs-blueTxt">Our Skills.</h3>
+      <p class="w3-text-white">Work we have done - <br>
+      Factory, Warehouse, Restaurant, Delivery, Office and Skilled trades and more.</p>
+      <p class="w3-text-white">How we woosaw! - <br>
+      Go on Nature walks and Hikes, Overlanding, Exploring and Camping.<br><br>You might say that we are very much into Gear, Guns, Gadgets and God in the Great outdoors.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide w3-text-white"><i class="fa fa-th w3-margin-right"></i>Organizing</p>
+      <div class="w3-grey">
+        <div class="w3-container trs-blueBackground w3-text-white w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide w3-text-white"><i class="fa fa-desktop w3-margin-right"></i>Tech</p>
+      <div class="w3-grey">
+        <div class="w3-container trs-blueBackground w3-text-white w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide w3-text-white"><i class="fa fa-cab w3-margin-right"></i>Camping</p>
+      <!-- <p class="w3-wide"><i class='fas fa-caravan'></i>Camping</p> -->
+      <div class="w3-grey">
+        <div class="w3-container trs-blueBackground w3-text-white w3-center" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide w3-text-white"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container trs-blueBackground w3-text-white w3-center" style="width:65%">65%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DO NOT DELETE THIS SECTION Pricing Section.  Will Promote this when we have more figured out -->
+<!--div class="w3-container w3-center w3-white" style="padding:128px 16px" id="pricing">
+  <h3 class="trs-blueTxt">SERVICES AND PRICING</h3>
+  <p class="w3-large trs-blueTxt">Choose what fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="trs-blueBackground w3-text-white w3-xlarge w3-padding-32">Basic</li>
+        
+        <li class="w3-padding-16"> Search and research </li>
+        <li class="w3-padding-16"> Data entry and filing </li>
+        <li class="w3-padding-16"> Clutter cutting and categorizing </li>
+        <li class="w3-padding-16"> Home office setup </li>
+        <li class="w3-padding-16"> Technical support </li>
+        
         <li class="w3-padding-16">
-          <!-- <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px"> -->
-          <video style="width:90%;" controls>
-                    <source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                  Your browser does not support the video tag.
-                  </video>
-          <span class="w3-large">Evening Moose</span><br>
-          <span>Tuesday, February 1st 2022</span><br>
-          <a href="#"><button class="w3-button w3-light-grey w3-round">See More</button></a>
+          <h2 class="w3-wide">$ 30</h2>
+          <span class="w3-opacity">per hour</span>
         </li>
-        <li class="w3-padding-16">
-          <img src="2021-10-05 17.07.28.jpg" class="w3-left w3-margin-right" style="width:90%;">
-          <span class="w3-large">Evening walk around Butte</span><br>
-          <span>Tuesday, October 5th 2021</span><br>
-          <a href="#"><button class="w3-button w3-light-grey w3-round">See More</button></a>
-        </li> 
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button trs-blueBackground w3-text-white w3-padding-large">Sign Up</button>
+        </li>
       </ul>
     </div>
-
-    <div class="w3-third w3-serif">
-      <h3>Things we fnd joy in</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Family</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mountains</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nature</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Books</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Art</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Trails</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Movies</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Camping</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Crafting</span>
-        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Preparedness</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baking</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fishing</span>
-      </p>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="trs-blueBackground w3-text-white w3-xlarge w3-padding-32">Advanced</li>
+        
+        <li class="w3-padding-16"> Office equipment cleaning </li>
+        <li class="w3-padding-16"> Electronic Device cleaning </li>
+        <li class="w3-padding-16"> Information Organizing </li>
+        <li class="w3-padding-16"> Computer virus removal </li>
+        <li class="w3-padding-16"> Repairs</li>
+                
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 35</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button trs-blueBackground w3-text-white w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
     </div>
-  </footer>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<!--div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="trs-blueBackground w3-text-white w3-xlarge w3-padding-32">Premium</li>
+        
+        <li class="w3-padding-16"> Security Setup </li>
+        <li class="w3-padding-16"> Carpet, Tile and Upholstery Cleaning </li>
+        <li class="w3-padding-16"> Web Development </li>
+        <li class="w3-padding-16"> Information Security and Monitoring </li>
+        
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 40</h2>
+          <span class="w3-opacity">per hour</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button trs-blueBackground w3-text-white w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
   </div>
 </div-->
 
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:50px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <!-- <div style="margin-top:48px"> -->
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> East Idaho, US</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Text Please: 208-530-0134</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: therosenlundsolution@gmail.com</p>
+    <!-- <br> -->
+    <!--form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form-->
+    <!-- Image of location/map -->
+    <!-- <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+  <!-- </div> -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center trs-blueBackground w3-text-white w3-padding-64">
+  <a href="#home" class="w3-button trs-lightBlueBackround w3-hover-white trs-hoverDarkBlue"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <i class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/feed/"></i>
+  </div>
+ <p class="w3-small">This website was made with W3schools Spaces.</p>
+ <p class="w3-text-white">
+    <div>&copy; The Rosenlund Solution 2005 - <span id="FooterDate3"></span></div>
+    <!-- <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span> -->
+  </p>
+ <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
+</footer>
+
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 <script>
-// for date under family profile intro on main page
-var trsProfileDate = new Date();
-          
-document.getElementById("ProfileDate").innerHTML = trsProfileDate.getFullYear();
-      
-</script>
-<script type="text/javascript">
-
-window.onscroll = function() {scrollFunction()};
-
-
-
-function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("myBtn").style.display = "none";
-    } else {
-        document.getElementById("myBtn").style.display = "block";
-    }
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
 }
-</script>
-<script>
 
 
-// Script to open and close sidebar
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
 }
 
- 
+// Close the sidebar with the close button
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+    mySidebar.style.display = "none";
 }
-
-function readMeClean(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeOrganize(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeSecure(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMePrep(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeB(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeA(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeR(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-function readMeE(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-// Accordion
-/*function myAccordian(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}*/
 </script>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myDropDown() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Toggle grid padding
-function myFunction() {
-  var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
-  } else { 
-    x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
-
-
-
-</script>
-<script>
-var d = new Date();
-
-var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-document.getElementById("CurrentUpdate").innerHTML = months[d.getMonth()];
-document.getElementById("CurrentUpdate2").innerHTML = months[d.getMonth()];
-document.getElementById("CurrentUpdate3").innerHTML = months[d.getMonth()];
-
-
-</script>
-<!--script type="text/javascript">
-  var tFY = new Date();
-  document.getElementById("TRSFullYear").innerHTML = tFY.getFullYear();
-</script-->
 <script>
 // for date on all pages
 var trsFooterDate = new Date();
 
-document.getElementById("FooterDate").innerHTML = trsFooterDate.getFullYear();
-document.getElementById("FooterDate2").innerHTML = trsFooterDate.getFullYear();
+// document.getElementById("FooterDate").innerHTML = trsFooterDate.getFullYear();
+// document.getElementById("FooterDate2").innerHTML = trsFooterDate.getFullYear();
 document.getElementById("FooterDate3").innerHTML = trsFooterDate.getFullYear();
-document.getElementById("TRSFullYear").innerHTML = trsFooterDate.getFullYear();
-document.getElementById("TRSFullYear2").innerHTML = trsFooterDate.getFullYear();
-document.getElementById("TRSFullYear3").innerHTML = trsFooterDate.getFullYear();
+// document.getElementById("TRSFullYear").innerHTML = trsFooterDate.getFullYear();
+// document.getElementById("TRSFullYear2").innerHTML = trsFooterDate.getFullYear();
+// document.getElementById("TRSFullYear3").innerHTML = trsFooterDate.getFullYear();
 
-</script>
-
-<script>
-// Used for w3js include techniques
-w3.includeHTML();
 </script>
 </body>
 </html>
