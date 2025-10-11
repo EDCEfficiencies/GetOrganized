@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    
     <link rel="shortcut icon" type="image/png" href="trs-app-logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -19,6 +20,11 @@
       line-height: 1.8;
     }
     .trs-blueBackground {background-color: #000026!important;}
+    .solutions-2 {
+      background-image: url("img/solutions-2.png");
+      width: 20px;
+      height: 20px;
+    }
     .trs-blueTxt {color: #000026!important;}
     .trs-greenBackground {background-color: #666633 !important;}
     .trs-darkGreenTxt {color: #004400 !important;}
@@ -53,9 +59,10 @@
     <a href="#home" class="w3-bar-item w3-large w3-button w3-wide w3-hide-small"><strong>EDC Efficiencies</strong></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small w3-hide-medium">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-smile-o" style="font-size:20px;"></i> ABOUT</a>
+      <a href="#sol" class="w3-bar-item w3-button"><i class="fa fa-gear" style="font-size:20px;"></i> SOLUTIONS</a>
 <!--       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a> -->
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICES</a>
       <!--DO NOT DELETE THE TAG BELOW THIS LINE.  When pricing is figured out, this will be implemented -->
       <!-- <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a> -->
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
@@ -99,9 +106,10 @@
 </header>
 
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT US</h3>
-  <p class="w3-center w3-large">And what we do</p>
+<div class="w3-container" style="padding:100px 16px" id="sol">
+  <h3 class="w3-center">WHAT WE PROVIDE</h3>
+  <!-- <h3 class="w3-center">ABOUT US</h3> -->
+  <!-- <p class="w3-center w3-large">What we do</p> -->
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-refresh w3-margin-bottom w3-jumbo w3-center trs-odGreenTxt"></i>
@@ -311,19 +319,22 @@ We can help you better understand these devices and how to use them.</p>
 </div-->
 
 <!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
+<div class="w3-container" style="padding:100px 16px" id="work">
   <h3 class="w3-center">WHAT WE DO</h3>
   <p class="w3-center w3-large">We have been pretty diverse</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l4 m6">
-      <img src="2023-11-18 14.18.41.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <img src="2023-11-18 14.18.41.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Exploring">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Exploring</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="2023-12-02 14.48.07.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <img src="2023-12-02 14.48.07.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Wild life Photography ">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Wild life Photography</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="2023-12-09 14.26.48.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <img src="2023-12-09 14.26.48.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Year round Exercise">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Year round Exercise</p>
     </div>
     <!--div class="w3-col l3 m6">
       <img src="https://www.w3schools.com/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
@@ -335,37 +346,46 @@ We can help you better understand these devices and how to use them.</p>
       <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
     </div-->
     <div class="w3-col l4 m6">
-      <img src="2024-03-12 12.12.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      <img src="2024-03-12 12.12.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Computer Cleaning">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Computer Cleaning</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="WebCode.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      <img src="WebCode.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Web Building">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Web Building</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="gettyimages-1599973349-612x612.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l4 m6">
-      <img src="2024-01-15 11.44.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="2024-01-04 15.21.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="2023-12-16 15.39.56.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+      <img src="gettyimages-1599973349-612x612.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cyber Security">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Cyber Security</p>
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l4 m6">
-      <img src="2024-03-05 13.07.08.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      <img src="2024-01-15 11.44.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Off Road">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Off Road</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="2024-03-12 12.36.01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      <img src="2024-01-04 15.21.39.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Caring for Wildlife">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Caring for Wildlife</p>
     </div>
     <div class="w3-col l4 m6">
-      <img src="2024-05-21 13.43.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+      <img src="2023-12-16 15.39.56.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Camping">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Camping</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l4 m6">
+      <img src="2024-03-05 13.07.08.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EDC">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">EDC</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2024-03-12 12.36.01.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Parts Replacement">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Parts Replacement</p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="2024-05-21 13.43.42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Organizing">
+      <p class="w3-center" style="margin-top: -5px;margin-bottom: -5px;">Organizing</p>
     </div>
   </div>
 </div>
@@ -519,6 +539,7 @@ We can help you better understand these devices and how to use them.</p>
  <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
 </footer>
 
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
 <script>
 // Modal Image Gallery
