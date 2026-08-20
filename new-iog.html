@@ -33,6 +33,7 @@
     .trs-lightBlueBackround {background-color: #66ccff !important}
     .trs-hoverLightBlueBackround:hover {background-color: #66ccff !important}
     .w3-button {opacity: none !important}
+    .no-underline {text-decoration: none;}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
@@ -45,18 +46,18 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!-- Navbar (sit on top) for large screens -->
   <div class="w3-top w3-card" style="width: 100%;">
     <div class="w3-bar w3-text-white w3-card trs-blueBackground" id="myNavbar">
-      <a href="#about" class="w3-bar-item w3-button w3-left w3-hide-medium w3-hide-small"><i class="fa fa-smile-o" style="font-size:16px;margin-top: 23px;"></i> ABOUT</a>
-      <a href="new-iog.html" class="w3-bar-item w3-button w3-hide-medium w3-hide-small"><i class="material-icons" style="font-size: 14px;margin-top: 23px;">chat_bubble_outline</i> BLOG</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-small"><i class="fa fa-envelope" style="margin-top: 23px;"></i> CONTACT</a>
-      <a href="#work" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-small"><i class="fa fa-th" style="margin-top: 23px;"></i> SERVICES</a>
-      <a href="#sol" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-small"><i class="fa fa-gear" style="font-size:16px;margin-top: 23px;"></i> SOLUTIONS</a>
+      <a href="#about" class="w3-bar-item no-underline trs-hoverLightBlue w3-left w3-hide-medium w3-hide-small"><i class="fa fa-smile-o" style="font-size:16px;margin-top: 23px;"></i> ABOUT</a>
+      <a href="new-iog.html" class="w3-bar-item no-underline trs-hoverLightBlue w3-hide-medium w3-hide-small"><i class="material-icons" style="font-size: 14px;margin-top: 23px;">chat_bubble_outline</i> BLOG</a>
+      <a href="#contact" class="w3-bar-item no-underline trs-hoverLightBlue w3-right w3-hide-medium w3-hide-small"><i class="fa fa-envelope" style="margin-top: 23px;"></i> CONTACT</a>
+      <a href="#work" class="w3-bar-item no-underline trs-hoverLightBlue w3-right w3-hide-medium w3-hide-small"><i class="fa fa-th" style="margin-top: 23px;"></i> SERVICES</a>
+      <a href="#sol" class="w3-bar-item no-underline trs-hoverLightBlue w3-right w3-hide-medium w3-hide-small"><i class="fa fa-gear" style="font-size:16px;margin-top: 23px;"></i> SOLUTIONS</a>
       
       
       <div class="w3-center">
         <a href="index.html" class="w3-text-white" style="text-decoration: none;">
-          <img src='trs-square-eye-transparent.png' class="w3-hide-large" width='60' style="margin-top: -8px;margin-bottom: 8px;">
-          <img src='trs-square-eye-transparent.png' class="w3-hide-medium w3-hide-small" width='60' style="margin-left: 15%;margin-top: -8px;margin-bottom: 8px;">
-          <p class="trs-blueBackground w3-hide-medium w3-hide-small" style="margin-left: 32%;margin-top: -18px;"><b>EDC Efficiencies </b></p>
+          <img src='trs-square-eye-transparent-new.png' class="w3-hide-large" width='60' style="margin-top: -8px;margin-bottom: 8px;">
+          <img src='trs-square-eye-transparent-new.png' class="w3-hide-medium w3-hide-small" width='60' style="margin-left: 15%;margin-top: -8px;margin-bottom: 8px;">
+          <p class="trs-blueBackground w3-hide-medium w3-hide-small" style="margin-left: 31.5%;margin-top: -18px;"><b>EDC Efficiencies </b></p>
           <p class="trs-blueBackground w3-hide-large w3-hide-small" style="margin-left: 0.5%;margin-top: -18px;"><b>EDC Efficiencies </b></p>
           <p class="trs-blueBackground w3-hide-large w3-hide-medium" style="margin-left: 0.5%;margin-top: -18px;font-size: 10px;"><b>EDC Efficiencies </b></p>
         </a>
@@ -91,12 +92,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block trs-blueBackground w3-card w3-animate-left w3-hide-large w3-text-white" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="new-iog.html" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
-  <a href="#sol" onclick="w3_close()" class="w3-bar-item w3-button">SOLUTIONS</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+  <a href="index.html#sol" onclick="w3_close()" class="w3-bar-item w3-button">SOLUTIONS</a>
+  <a href="index.html#work" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
   <!-- <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a> -->
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 </div>
 
@@ -110,7 +111,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </header-->
 
 <!-- Header -->
-<div class="w3-container" id="home">
+<div class="w3-container w3-grey" id="home">
   <header class="w3-container w3-center w3-padding-32" style="margin-top: 80px;"> 
     <h1><b>Hello Friends!</b></h1>
     <p>and welcome to the <span class="w3-tag trs-odGreenBackground">Idaho Outdoor Geeks</span><span class="w3-tag trs-blueBackground">BLOG</span></p>
@@ -118,19 +119,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Grid -->
-<div class="w3-row">
+<div class="w3-row w3-grey">
 
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin trs-odGreenBackground">
     <img src="img/woods.jpg" alt="Nature" style="width:100%">
-    <div class="w3-container">
+    <div class="w3-container w3-padding w3-dark-grey">
       <h3><b>TREE HUGGING</b></h3>
-      <h5>Side Mountain hike, <span class="w3-opacity">Oct 25, 2025</span></h5>
+    </div>
+    <div class="w3-container">
+      <!-- <h3><b>TREE HUGGING</b></h3> -->
+      <h5 class="w3-text-white">Side Mountain hike, <span class="w3-opacity">Oct 25, 2025</span></h5>
     </div>
 
-    <div class="w3-container">
+    <div class="w3-container w3-text-white">
       <p>What started out as just a walk down a dirt road, quickly turned into a side mountain hike.  Ele lost her bear spray, Iree forgot her pine cones.  But it all turned out well in the end as we got everything back and finished our evening by a warm campfire before returning home.</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
@@ -145,14 +149,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <hr>
 
   <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-card-4 w3-margin trs-odGreenBackground">
   <img src="img/bridge.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container w3-padding w3-dark-grey">
+        <h3><b>BLOG ENTRY</b></h3>
+      </div>
     <div class="w3-container">
-      <h3><b>BLOG ENTRY</b></h3>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+      <!-- <h3><b>BLOG ENTRY</b></h3> -->
+      <h5 class="w3-text-white">Title description, <span class="w3-opacity">April 2, 2014</span></h5>
     </div>
 
-    <div class="w3-container">
+    <div class="w3-container w3-text-white">
       <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
         tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       <div class="w3-row">
@@ -171,25 +178,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!-- Introduction menu -->
 <div class="w3-col l4">
   <!-- About Card -->
-  <div class="w3-card w3-margin w3-margin-top">
+  <div class="w3-card w3-margin w3-margin-top trs-odGreenBackground">
   <!-- <img src="img/iog-img/avatar_g.jpg" style="width:100%"> -->
   <img src="img/2025-09-13 18.25.40.jpg" style="width:60%;margin-left: 20%;">
-  
-    <div class="w3-container w3-white">
-      <h4 class="w3-center"><b>"Whole fam damnly!"</b></h4>
-      <p>I would imagine that even our Angel Daughter RyleeAnne is with us on these adventures as we get out into the wilderness exploring to look for Owls, Eagles, Elk and Moose and even Bears.  We also enjoy learning the history of the areas we pursue.  For us, being in the wild is Gods Art to us and the music of the trees brings us closer together and our Maker.  We love family and friends and enjoy serving and being in places like this helps us heal from the storms of life.</p>
+  <div class="w3-container w3-padding w3-dark-grey">
+    <h4 class="w3-center"><b>"Whole fam damnly!"</b></h4>
+  </div>
+    <div class="w3-container trs-odGreenBackground">
+
+      <p class="w3-text-white">I would imagine that even our Angel Daughter RyleeAnne is with us on these adventures as we get out into the wilderness exploring to look for Owls, Eagles, Elk and Moose and even Bears.  We also enjoy learning the history of the areas we pursue.  For us, being in the wild is Gods Art to us and the music of the trees brings us closer together and our Maker.  We love family and friends and enjoy serving and being in places like this helps us heal from the storms of life.</p>
     </div>
   </div><hr>
   
   <!-- Posts -->
-  <div class="w3-card w3-margin">
+  <div class="w3-card w3-margin w3-dark-grey">
     <div class="w3-container w3-padding">
-      <h4>Popular Posts</h4>
+      <h4>Helpful Gear</h4>
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
+    <ul class="w3-ul w3-hoverable trs-odGreenBackground">
       <li class="w3-padding-16">
         <img src="img/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
+        <span class="w3-large">Binos</span><br>
         <span>Sed mattis nunc</span>
       </li>
       <li class="w3-padding-16">
@@ -212,16 +221,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <hr> 
  
   <!-- Labels / tags -->
-  <div class="w3-card w3-margin">
+  <div class="w3-card w3-margin w3-dark-grey">
     <div class="w3-container w3-padding">
       <h4>Tags</h4>
     </div>
-    <div class="w3-container w3-white">
-    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">National Parks</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Forests</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hiking</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Camping</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Camp fires</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Glassing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Owls</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Eagles</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Gear</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Archery</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Moose and Elk</span>
+    <div class="w3-container trs-odGreenBackground">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">National Parks</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Forests</span>
+      <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Hiking</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Camping</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Camp fires</span>
+      <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Glassing</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Owls</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Eagles</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Gear</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Archery</span> <span class="w3-tag w3-grey w3-text-white w3-small w3-margin-bottom">Moose and Elk</span>
     </p>
     </div>
   </div>
@@ -230,16 +239,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- END GRID -->
-</div><br>
+</div>
 
 <!-- END w3-content -->
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Newer</button>
+<footer class="w3-container w3-dark-grey w3-padding-32">
+  <button class="w3-button w3-white w3-text-black w3-padding-large w3-margin-bottom">Newer</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Older »</button>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" class="w3-hover-text-light-blue" target="_blank">w3.css</a></p>
 </footer>
 
 
@@ -475,24 +484,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     
 </div-->
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day:<br> If Ye are Prepared, Ye Shall not Fear.</h1>
+<div class="w3-container w3-dark-grey w3-center" style="padding-bottom: 32px;margin-top: -16px;">
+    <h1 class="w3-margin w3-xlarge">"If Ye are Prepared, Ye Shall not Fear"</h1>
 </div>
 
 <footer class="w3-container w3-center trs-greenBackground w3-text-white w3-padding-64">
-  <a href="#home" class="w3-button trs-lightBlueBackround w3-hover-white trs-hoverDarkBlue" style="box-shadow: 2px 2px white;"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#home" class="w3-button w3-white w3-hover-white w3-hover-text-white  no-underline trs-hoverLightBlueBackround" style="/*box-shadow: 2px 2px white;*/"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/feed/"></i>
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/"></i> -->
+    <!-- <i class="fa fa-instagram w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
+    <!-- <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin trs-hoverLightBlue"></i></a>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="trs-hoverLightBlue">w3.css</a></p>
  <!-- <p class="w3-small">This website was made with W3schools Spaces.</p> -->
  <p class="w3-text-white">
-    <div>&copy; The Rosenlund Solution 2005 - <span id="FooterDate3"></span></div>
+    <div>&copy; The Rosenlund Solution 2005 -> EDC Efficiencies 2005 - <span id="FooterDate3"></span></div>
     <!-- <div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span> -->
   </p>
  <!-- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
